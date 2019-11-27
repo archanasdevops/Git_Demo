@@ -2,3 +2,5 @@ git init - To initialize
 git add <file name> - To add a file(s)
 git status - To find status of the files, commints
 git commit -m "name of the commit" - To commit the changes
+git log - to show history of commits
+git show - To diff between last two commits
