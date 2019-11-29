@@ -20,3 +20,5 @@ git config --global alias.history "log --oneline --graph --decorate --all"
  git add -u - to add deletions from manual OS 
  git add -A - to add every file activity from manual OS operations
  .gitignore - Create this fie in present working repo directory and mention the names of the files that you do not want to track. You need to stage this file too. As soon as staged, git starts ignoring the files listed in it.
+ git difftool debbc6f HEAD
+ git diff debbc6f HEAD
