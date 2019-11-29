@@ -8,17 +8,21 @@ git ls-files - to see number of files
 git commit -a - to commit in a express way, this adds files to staging aread then commits
 git reset HEAD <file name> - to unstage the specific file from staging area, however file contents wont be deleted
 git checkout -- <file name> - to delete the latest content which you want to revert to last good commit
+git help log - To view available options for log command.
+git log --online --graph --decorate --all 		- To view various options in log command. Here are the preffered ones. YOu can add more if you would like.
+git config --global alias.history "log --oneline --graph --decorate --all" - To add an alias, here is called history. Basically your name replaces the entire command that you give in quotes.
+git config --global --list  - To view list of configs, you can see above alias in it.
+git mv <fileName1> to <fileName2> - This is to move file through git instead of doing it at OS level. By doing this, ops are reflected in git automatically. You do not need to stage again. 
+git rm <fileName1> to <fileName2> - This is to remove file through git instead of doing it at OS level. By doing it, ops are reflected in git automatically. You do not need to stage again. 
+git add -u - to add deletions from manual OS 
+git add -A - to add every file activity from manual OS operations
+.gitignore - Create this fie in present working repo directory and mention the names of the files that you do not want to track. You need to stage this file too. As soon as staged, git starts ignoring the files listed in it.
 
-git help log - 
-
-git log --online --graph --decorate --all
-
-git config --global alias.history "log --oneline --graph --decorate --all"
- git config --global --list
- git mv <fileName1> to <fileName2> - 
- git rm <fileName1> to <fileName2> - 
- git add -u - to add deletions from manual OS 
- git add -A - to add every file activity from manual OS operations
- .gitignore - Create this fie in present working repo directory and mention the names of the files that you do not want to track. You need to stage this file too. As soon as staged, git starts ignoring the files listed in it.
- git difftool debbc6f HEAD
- git diff debbc6f HEAD
+git difftool <commitID> HEAD - To see the difference between certain commit ID and HEAD (latest commit)
+git diff debbc6f HEAD - To see the difference between certain commit ID and HEAD (latest commit) in GRAPHICAL TOOL
+git branch - To look at the current branch that you are on
+git checkout -b <branchName>  - To create a new branch and at a same time, swtiching to it.
+git checkout master - To switch back to master repo from whatever the branch you are in.
+git merge <branchName> - To merge the branches.
+git branch -d <branchName> - To delete a specific branch
+ 
