@@ -15,3 +15,5 @@ git log --online --graph --decorate --all
 
 git config --global alias.history "log --oneline --graph --decorate --all"
  git config --global --list
+ git mv <fileName1> to <fileName2> - 
+ git rm <fileName1> to <fileName2> - 
