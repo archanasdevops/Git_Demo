@@ -4,3 +4,14 @@ git status - To find status of the files, commints
 git commit -m "name of the commit" - To commit the changes
 git log - to show history of commits
 git show - To diff between last two commits
+git ls-files - to see number of files
+git commit -a - to commit in a express way, this adds files to staging aread then commits
+git reset HEAD <file name> - to unstage the specific file from staging area, however file contents wont be deleted
+git checkout -- <file name> - to delete the latest content which you want to revert to last good commit
+
+git help log - 
+
+git log --online --graph --decorate --all
+
+git config --global alias.history "log --oneline --graph --decorate --all"
+ git config --global --list
