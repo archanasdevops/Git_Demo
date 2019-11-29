@@ -2,3 +2,4 @@ dfsdfsd
 fsdfasdfx
 added a new line on a new branch
 Testing diff function
+causing conflict master
